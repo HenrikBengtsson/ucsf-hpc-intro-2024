@@ -415,7 +415,7 @@ Henrik Bengtsson
 <li><p>For you to know the basics of scripting your analysis</p></li>
 <li><p>For you to know it is not that hard to get started with HPC</p></li>
 </ul>
-<!-- A 25-minute presentation on 2023-11-13 -->
+<!-- A 25-minute presentation on 2024-11-04 -->
 </section>
 
 <section id="why-do-we-use-a-compute-cluster" class="title-slide slide level1 center">
@@ -465,7 +465,7 @@ Henrik Bengtsson
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Number of users</td>
-<td style="text-align: left;">~1,800</td>
+<td style="text-align: left;">~1,400</td>
 <td style="text-align: left;">~300</td>
 </tr>
 <tr class="even">
@@ -506,19 +506,24 @@ Henrik Bengtsson
 <tr class="odd">
 <td style="text-align: left;">Linux</td>
 <td style="text-align: left;">Rocky 8</td>
-<td style="text-align: left;">CentOS 7.9</td>
+<td style="text-align: left;">Rocky 8</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Automatic backups</td>
-<td style="text-align: left;">no (on the roadmap)</td>
+<td style="text-align: left;">home directory (only)</td>
 <td style="text-align: left;">home directory (only)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">GPUs</td>
 <td style="text-align: left;">yes</td>
-<td style="text-align: left;">no</td>
+<td style="text-align: left;">yes</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">Web browser GUI</td>
+<td style="text-align: left;">no</td>
+<td style="text-align: left;">soon (reviving OnDemand)</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">Documentation</td>
 <td style="text-align: left;"><a href="https://wynton.ucsf.edu/" data-preview-link="true">https://wynton.ucsf.edu/</a></td>
 <td style="text-align: left;"><a href="https://www.c4.ucsf.edu/" data-preview-link="true">https://www.c4.ucsf.edu/</a></td>
@@ -565,7 +570,7 @@ Henrik Bengtsson
 <p>For example, if type <code>date</code> at the command-line prompt and press ENTER, the machine will reply with the current timestamp, and then wait for your next command:</p>
 <div class="terminal">
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> date</span>
-<span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 13 11:36:33 PM PST 2023</span>
+<span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 4 11:36:33 PM PST 2024</span>
 <span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -586,7 +591,7 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 13 11:37:43 PM PST 2023</span>
+<span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 4 11:37:43 PM PST 2024</span>
 <span id="cb5-4"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -594,7 +599,7 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 13 11:38:05 PM PST 2023</span>
+<span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Mon</span> Nov 4 11:38:05 PM PST 2024</span>
 <span id="cb6-4"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -614,7 +619,7 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2023-11-13</span> 11:43:03</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2024-11-04</span> 11:43:03</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section></section>
@@ -641,14 +646,14 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2023-11-13</span> 11:45:14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2024-11-04</span> 11:45:14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <p>We can run it multiple times:</p>
 <div class="terminal">
 <div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2023-11-13</span> 11:45:32</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2024-11-04</span> 11:45:32</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -656,7 +661,7 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> bash hello.sh</span>
 <span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2023-11-13</span> 11:45:51</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2024-11-04</span> 11:45:51</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -683,7 +688,7 @@ Henrik Bengtsson
 <div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> qstat</span>
 <span id="cb13-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">job-ID</span>  prior   name     user   state submit/start at     queue              slots</span>
 <span id="cb13-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">----------------------------------------------------------------------------------</span></span>
-<span id="cb13-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8522736</span> 0.00000 hello.sh alice  qw    11/13/2023 11:37:17                    1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8522736</span> 0.00000 hello.sh alice  qw    11/04/2024 11:37:17                    1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here <code>qw</code> means <strong>queued</strong> and <strong>waiting</strong> for a machine to become available.</p>
 </div>
@@ -696,7 +701,7 @@ Henrik Bengtsson
 <div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> qstat</span>
 <span id="cb14-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">job-ID</span>  prior   name     user   state submit/start at     queue              slots</span>
 <span id="cb14-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">----------------------------------------------------------------------------------</span></span>
-<span id="cb14-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8522736</span> 0.07069 hello.sh alice  r     11/13/2023 11:38:02 long.q@msg-iogpu6  1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8522736</span> 0.07069 hello.sh alice  r     11/04/2024 11:38:02 long.q@msg-iogpu6  1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Here <code>r</code> means <strong>running</strong>. Now we need to wait …</p>
 </div>
@@ -715,7 +720,7 @@ Henrik Bengtsson
 <div class="terminal">
 <div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> cat hello.sh.o8522736</span>
 <span id="cb16-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
-<span id="cb16-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2023-11-13</span> 11:46:54</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">2024-11-04</span> 11:46:54</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -726,7 +731,7 @@ Henrik Bengtsson
 <span id="cb17-2"><a></a></span>
 <span id="cb17-3"><a></a><span class="co"># This script says hello to the world</span></span>
 <span id="cb17-4"><a></a><span class="co"># Author: Alice</span></span>
-<span id="cb17-5"><a></a><span class="co"># Date: 2023-11-12</span></span>
+<span id="cb17-5"><a></a><span class="co"># Date: 2024-11-04</span></span>
 <span id="cb17-6"><a></a></span>
 <span id="cb17-7"><a></a><span class="bu">echo</span> <span class="st">"Hello world"</span></span>
 <span id="cb17-8"><a></a></span>
@@ -747,7 +752,7 @@ Henrik Bengtsson
 <p><code>random.R</code>:</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a><span class="co"># This R script outputs a random number</span></span>
 <span id="cb19-2"><a></a><span class="co"># Author: Alice</span></span>
-<span id="cb19-3"><a></a><span class="co"># Date: 2023-11-12</span></span>
+<span id="cb19-3"><a></a><span class="co"># Date: 2024-11-04</span></span>
 <span id="cb19-4"><a></a></span>
 <span id="cb19-5"><a></a><span class="fu">cat</span>(<span class="st">"A random number in [0,1]:"</span>, <span class="fu">runif</span>(<span class="dv">1</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
@@ -772,7 +777,7 @@ Henrik Bengtsson
 <span id="cb22-2"><a></a></span>
 <span id="cb22-3"><a></a><span class="co"># This shell script calls the random.R script</span></span>
 <span id="cb22-4"><a></a><span class="co"># Author: Alice</span></span>
-<span id="cb22-5"><a></a><span class="co"># Date: 2023-11-12</span></span>
+<span id="cb22-5"><a></a><span class="co"># Date: 2024-11-04</span></span>
 <span id="cb22-6"><a></a></span>
 <span id="cb22-7"><a></a><span class="ex">Rscript</span> random.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
@@ -800,8 +805,8 @@ Henrik Bengtsson
 <div class="sourceCode" id="cb25"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> qstat</span>
 <span id="cb25-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">job-ID</span>  prior   name     user   state submit/start at     queue              slots</span>
 <span id="cb25-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">----------------------------------------------------------------------------------</span></span>
-<span id="cb25-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice qw    11/13/2023 11:28:02                    1        </span>
-<span id="cb25-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice qw    11/13/2023 11:28:04                    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice qw    11/04/2024 11:28:02                    1        </span>
+<span id="cb25-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -812,8 +817,8 @@ Henrik Bengtsson
 <div class="sourceCode" id="cb26"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> qstat</span>
 <span id="cb26-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">job-ID</span>  prior   name     user   state submit/start at     queue              slots</span>
 <span id="cb26-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">----------------------------------------------------------------------------------</span></span>
-<span id="cb26-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice r     11/13/2023 11:28:32 long.q@qb3-id3     1        </span>
-<span id="cb26-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice qw    11/13/2023 11:28:04                    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        </span>
+<span id="cb26-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <p>And then the other:</p>
@@ -821,8 +826,8 @@ Henrik Bengtsson
 <div class="sourceCode" id="cb27"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> qstat</span>
 <span id="cb27-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">job-ID</span>  prior   name     user   state submit/start at     queue              slots</span>
 <span id="cb27-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">----------------------------------------------------------------------------------</span></span>
-<span id="cb27-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice r     11/13/2023 11:28:32 long.q@qb3-id3     1        </span>
-<span id="cb27-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice r     11/13/2023 11:28:54 long.q@msg-id19    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-4"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529912</span> 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        </span>
+<span id="cb27-5"><a aria-hidden="true" tabindex="-1"></a><span class="ex">8529913</span> 0.07069 random.sh alice r     11/04/2024 11:28:54 long.q@msg-id19    1        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Note how the two jobs run on two different machines.</p>
 </div>
@@ -862,7 +867,7 @@ Henrik Bengtsson
 <section id="even-better-is-to-ask-your-peers" class="slide level2">
 <h2>Even better is to ask your peers</h2>
 <ul>
-<li><p><a href="https://wynton.ucsf.edu/" data-preview-link="true">Wynton</a> has 1,800 users and <a href="https://www.c4.ucsf.edu/" data-preview-link="true">C4</a> has 300 users - many of them on Slack</p></li>
+<li><p><a href="https://wynton.ucsf.edu/" data-preview-link="true">Wynton</a> has 1,400 users and <a href="https://www.c4.ucsf.edu/" data-preview-link="true">C4</a> has 300 users - many of them on Slack</p></li>
 <li><p>The Slack channel is welcoming and friendly</p></li>
 <li><p>Lots of users are willing to help out</p></li>
 <li><p>There is almost certainly at least one other user who have the same question as you</p></li>
@@ -897,7 +902,7 @@ Henrik Bengtsson
 <span id="cb31-2"><a></a>print("How are you?\n")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We can run these two lines using:</p>
 <div class="terminal">
-<div class="sourceCode" id="cb32"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> python hello.py</span>
+<div class="sourceCode" id="cb32"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a><span class="ex">[alice@dev1]$</span> python3 hello.py</span>
 <span id="cb32-2"><a aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world</span>
 <span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a><span class="ex">How</span> are you<span class="pp">?</span></span>
 <span id="cb32-4"><a aria-hidden="true" tabindex="-1"></a></span>
@@ -1311,7 +1316,7 @@ Henrik Bengtsson
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
+          var filterRegex = new RegExp("https:\/\/HenrikBengtsson\.github\.io\/ucsf-hpc-intro-2024\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
