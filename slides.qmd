@@ -24,7 +24,7 @@ width: 1100
 
 
 
-<!-- A 25-minute presentation on 2023-11-13 -->
+<!-- A 25-minute presentation on 2024-11-04 -->
 
 
 
@@ -66,7 +66,7 @@ width: 1100
 |:--------------------|:---------------------------|:---------------------------|
 | Since               | 2018                       | 2020                       |
 | For whom?           | All of UCSF                | Cancer Center affiliates   |
-| Number of users     | ~1,800                     | ~300                       |
+| Number of users     | ~1,400                     | ~300                       |
 | Number of computers | ~500                       | ~40                        |
 | Number of cores     | ~17,500                    | ~2,800                     |
 | Memory (RAM)        | 48 -- 1,512 GiB RAM        | 32 -- 1,024 GiB RAM        |
@@ -74,9 +74,10 @@ width: 1100
 | Communal computers  | 100%                       | 25%                        |
 | Paying contributors | VIP priority               | dedicated machines         |
 | Software            | core + [shared](https://wynton.ucsf.edu/hpc/software/software-repositories.html){preview-link="true"} + DIY        | core + [shared](https://www.c4.ucsf.edu/software/software-repositories.html){preview-link="true"} + DIY        |
-| Linux               | Rocky 8                    | CentOS 7.9                 |
-| Automatic backups   | no (on the roadmap)        | home directory (only)      |
-| GPUs                | yes                        | no                         |
+| Linux               | Rocky 8                    | Rocky 8                    |
+| Automatic backups   | home directory (only)      | home directory (only)      |
+| GPUs                | yes                        | yes                        |
+| Web browser GUI     | no                         | soon (reviving OnDemand)   |
 | Documentation       | <https://wynton.ucsf.edu/>{preview-link="true"} | <https://www.c4.ucsf.edu/>{preview-link="true"} |
 
 
@@ -125,7 +126,7 @@ wait for your next command:
 ::: {.terminal}
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ date
-Mon Nov 13 11:36:33 PM PST 2023
+Mon Nov 4 11:36:33 PM PST 2024
 
 [alice@dev1]$
 ```
@@ -160,7 +161,7 @@ We can run these two lines using the `bash` command:
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-Mon Nov 13 11:37:43 PM PST 2023
+Mon Nov 4 11:37:43 PM PST 2024
 
 [alice@dev1]$
 ```
@@ -173,7 +174,7 @@ We can call any number of times we'd like, e.g.
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-Mon Nov 13 11:38:05 PM PST 2023
+Mon Nov 4 11:38:05 PM PST 2024
 
 [alice@dev1]$
 ```
@@ -205,7 +206,7 @@ Comments are ignored when script is run, so still the same result;
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-2023-11-13 11:43:03
+2024-11-04 11:43:03
 ```
 :::
 
@@ -239,7 +240,7 @@ We can run the script manually at the command line:
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-2023-11-13 11:45:14
+2024-11-04 11:45:14
 ```
 :::
 
@@ -251,7 +252,7 @@ We can run it multiple times:
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-2023-11-13 11:45:32
+2024-11-04 11:45:32
 ```
 :::
 
@@ -263,7 +264,7 @@ Hello world
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ bash hello.sh
 Hello world
-2023-11-13 11:45:51
+2024-11-04 11:45:51
 ```
 :::
 
@@ -303,7 +304,7 @@ _queue status_ of our jobs:
 [alice@dev1]$ qstat
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
-8522736 0.00000 hello.sh alice  qw    11/13/2023 11:37:17                    1
+8522736 0.00000 hello.sh alice  qw    11/04/2024 11:37:17                    1
 ```
 :::
 
@@ -325,7 +326,7 @@ job need.
 [alice@dev1]$ qstat
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
-8522736 0.07069 hello.sh alice  r     11/13/2023 11:38:02 long.q@msg-iogpu6  1        
+8522736 0.07069 hello.sh alice  r     11/04/2024 11:38:02 long.q@msg-iogpu6  1        
 ```
 :::
 
@@ -355,7 +356,7 @@ But, now what? Where are the results?
 ```sh{code-line-numbers="false"}
 [alice@dev1]$ cat hello.sh.o8522736
 Hello world
-2023-11-13 11:46:54
+2024-11-04 11:46:54
 ```
 :::
 
@@ -371,7 +372,7 @@ with `#$ ` followed by qsub options.
 
 # This script says hello to the world
 # Author: Alice
-# Date: 2023-11-12
+# Date: 2024-11-04
 
 echo "Hello world"
 
@@ -402,7 +403,7 @@ calls our R or Python script.
 ```r
 # This R script outputs a random number
 # Author: Alice
-# Date: 2023-11-12
+# Date: 2024-11-04
 
 cat("A random number in [0,1]:", runif(1), "\n")
 ```
@@ -439,7 +440,7 @@ A random number in [0,1]: 0.12491344
 
 # This shell script calls the random.R script
 # Author: Alice
-# Date: 2023-11-12
+# Date: 2024-11-04
 
 Rscript random.R
 ```
@@ -482,8 +483,8 @@ As usual, it will take some time before the jobs starts:
 [alice@dev1]$ qstat
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
-8529912 0.07069 random.sh alice qw    11/13/2023 11:28:02                    1        
-8529913 0.07069 random.sh alice qw    11/13/2023 11:28:04                    1        
+8529912 0.07069 random.sh alice qw    11/04/2024 11:28:02                    1        
+8529913 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
 ```
 :::
 
@@ -497,8 +498,8 @@ But eventually, one starts:
 [alice@dev1]$ qstat
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
-8529912 0.07069 random.sh alice r     11/13/2023 11:28:32 long.q@qb3-id3     1        
-8529913 0.07069 random.sh alice qw    11/13/2023 11:28:04                    1        
+8529912 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        
+8529913 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
 ```
 :::
 
@@ -511,8 +512,8 @@ And then the other:
 [alice@dev1]$ qstat
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
-8529912 0.07069 random.sh alice r     11/13/2023 11:28:32 long.q@qb3-id3     1        
-8529913 0.07069 random.sh alice r     11/13/2023 11:28:54 long.q@msg-id19    1        
+8529912 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        
+8529913 0.07069 random.sh alice r     11/04/2024 11:28:54 long.q@msg-id19    1        
 ```
 :::
 
@@ -567,7 +568,7 @@ A random number in [0,1]: 0.9229252
 
 ## Even better is to ask your peers
 
-* [Wynton](https://wynton.ucsf.edu/){preview-link="true"} has 1,800
+* [Wynton](https://wynton.ucsf.edu/){preview-link="true"} has 1,400
   users and [C4](https://www.c4.ucsf.edu/){preview-link="true"} has
   300 users - many of them on Slack
 
@@ -623,7 +624,7 @@ We can run these two lines using:
 
 ::: {.terminal}
 ```sh{code-line-numbers="false"}
-[alice@dev1]$ python hello.py
+[alice@dev1]$ python3 hello.py
 Hello world
 How are you?
 
