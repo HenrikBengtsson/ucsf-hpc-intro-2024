@@ -470,7 +470,7 @@ For the sake of it, let's submit it _twice_ to the job scheduler:
 Your job 8529912 ("random.sh") has been submitted
 
 [alice@dev1]$ qsub random.sh
-Your job 8529913 ("random.sh") has been submitted
+Your job 9529919 ("random.sh") has been submitted
 ```
 :::
 
@@ -484,7 +484,7 @@ As usual, it will take some time before the jobs starts:
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
 8529912 0.07069 random.sh alice qw    11/04/2024 11:28:02                    1        
-8529913 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
+9529919 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
 ```
 :::
 
@@ -499,7 +499,7 @@ But eventually, one starts:
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
 8529912 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        
-8529913 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
+9529919 0.07069 random.sh alice qw    11/04/2024 11:28:04                    1        
 ```
 :::
 
@@ -513,7 +513,7 @@ And then the other:
 job-ID  prior   name     user   state submit/start at     queue              slots
 ----------------------------------------------------------------------------------
 8529912 0.07069 random.sh alice r     11/04/2024 11:28:32 long.q@qb3-id3     1        
-8529913 0.07069 random.sh alice r     11/04/2024 11:28:54 long.q@msg-id19    1        
+9529919 0.07069 random.sh alice r     11/04/2024 11:28:54 long.q@msg-id19    1        
 ```
 :::
 
@@ -527,10 +527,29 @@ stored in the corresponding `random.sh.o<job_id>` output file.
 
 ::: {.terminal}
 ```sh{code-line-numbers="false"}
+[alice@dev1]$ ls random.sh.*
+random.sh.o8529912
+random.sh.o9529919
+```
+:::
+<br>
+
+. . .
+
+::: {.terminal}
+```sh{code-line-numbers="false"}
 [alice@dev1]$ cat random.sh.o8529912
 A random number in [0,1]: 0.1704674
+```
+:::
 
-[alice@dev1]$ cat random.sh.o8529913
+<br>
+
+. . .
+
+::: {.terminal}
+```sh{code-line-numbers="false"}
+[alice@dev1]$ cat random.sh.o9529919
 A random number in [0,1]: 0.9229252 
 ```
 :::

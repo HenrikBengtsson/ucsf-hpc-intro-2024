@@ -10,3 +10,6 @@ check-dates: slides.qmd
 spelling: slides.qmd
 	Rscript -e 'spelling::spell_check_files("$<", ignore = readLines("WORDLIST"))'
 
+install-extensions:
+	quarto install extension EmilHvitfeldt/quarto-roughnotation
+
