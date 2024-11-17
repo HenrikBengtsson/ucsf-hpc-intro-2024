@@ -11,6 +11,7 @@ spelling: index.qmd
 	Rscript -e 'spelling::spell_check_files("$<", ignore = readLines("WORDLIST"))'
 
 install-extensions:
+	quarto add quarto-ext/pointer
 	quarto install extension EmilHvitfeldt/quarto-roughnotation
 
 preview:
